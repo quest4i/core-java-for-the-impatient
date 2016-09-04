@@ -7,6 +7,9 @@ import java.util.Scanner;
 /**
  * Created on 2016. 9. 4. 오전 4:12.
  *
+ * 1. 정수를 읽어서 2진수, 8진수, 16진수로 출력한다.
+ * 2. 역수를 16진 부동소수점수로 출력한다.
+ *
  * @author quest4i
  */
 public class ch01_ex01 {

@@ -6,14 +6,13 @@ import java.util.Scanner;
 /**
  * Created on 2016. 9. 4. 오전 4:39.
  *
+ * 1. 조건 연산자만 사용해서 정수 세 개를 읽고 최댓값을 출력한다.
+ * 2. Math.max를 사용해서 같은 프로그램을 작성한다.
+ *
  * @author quest4i
  */
 public class ch01_ex03 {
 
-    /*
-    조건 연사자만 사용해서 정수 세 개를 읽고 최댓값을 출력한다
-    2. Math.max 사용
-     */
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
@@ -25,7 +24,8 @@ public class ch01_ex03 {
         int max = a;
         if (a < b) {
             max = b;
-        } else if (a < c) {
+        }
+        if (max < c) {
             max = c;
         }
         System.out.println("max : " + max);

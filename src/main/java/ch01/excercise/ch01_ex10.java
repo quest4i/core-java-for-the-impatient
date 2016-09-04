@@ -1,5 +1,7 @@
 package ch01.excercise;
 
+import java.util.Random;
+
 /**
  * Created on 2016. 9. 4. 오후 1:54.
  *
@@ -9,4 +11,11 @@ package ch01.excercise;
  * @author samyeong-gu
  */
 public class ch01_ex10 {
+
+    public static void main(String[] args) {
+
+        long number = new Random().nextLong();
+        String output = Long.toString(number, 36);
+        System.out.println(output);
+    }
 }

@@ -17,6 +17,7 @@ public class ch01_ex08 {
         Scanner in = new Scanner(System.in);
         String str = in.nextLine();
 
-        Arrays.stream(str.split("\\s+")).forEach(System.out::println);
+        Arrays.stream(str.split("\\s+"))
+                .forEach(System.out::println);
     }
 }

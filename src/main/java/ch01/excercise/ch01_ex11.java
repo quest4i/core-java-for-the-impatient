@@ -1,5 +1,8 @@
 package ch01.excercise;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 /**
  * Created on 2016. 9. 4. 오후 1:54.
  *
@@ -9,4 +12,17 @@ package ch01.excercise;
  * @author samyeong-gu
  */
 public class ch01_ex11 {
+
+    public static void main(String[] args) {
+        
+        String line = new Scanner(System.in).nextLine();
+
+        int[] codePoints = line.codePoints().toArray();
+        char[] chars = line.toCharArray();
+        for (int i = 0; i < chars.length; i++) {
+            if (chars[i] > 255) {
+                System.out.println(chars[i] + " : " + codePoints[i]);
+            }
+        }
+    }
 }

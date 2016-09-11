@@ -14,3 +14,22 @@ package ch02.excercise;
  */
 public class Ch02ex09 {
 }
+
+
+class Car {
+
+    final int startPointX;
+    double gallons;
+    double efficiency;
+
+    public Car(int startPointX, double gallons, int efficiency) {
+        this.startPointX = startPointX;
+        this.gallons = gallons;
+        this.efficiency = efficiency;
+    }
+
+    public void drive(int miles) {
+        gallons = miles / efficiency;
+    }
+
+}

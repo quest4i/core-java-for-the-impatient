@@ -1,5 +1,7 @@
 package ch02.excercise;
 
+import org.omg.CORBA.IntHolder;
+
 /**
  * Created on 2016. 9. 10. 오후 4:27.
  *
@@ -10,4 +12,12 @@ package ch02.excercise;
  * @author samyeong-gu
  */
 public class Ch02ex04 {
+
+    public static void main(String[] args) {
+        IntHolder holdera = new IntHolder(3);
+        IntHolder holderb = new IntHolder(5);
+
+
+
+    }
 }

@@ -1,5 +1,10 @@
 package ch02.excercise;
 
+import java.util.ArrayList;
+import java.util.Random;
+
+import static com.sun.tools.doclint.Entity.or;
+
 /**
  * Created on 2016. 9. 10. 오후 4:46.
  *
@@ -11,4 +16,35 @@ package ch02.excercise;
  * @author samyeong-gu
  */
 public class Ch02ex10 {
+
+    public static void main(String[] args) {
+        int[] array = { 1, 2, 3, 4, 5 };
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(1); list.add(2); list.add(3); list.add(4); list.add(5);
+
+        System.out.println(RandomNumbers.randomElement(array));
+        System.out.println(RandomNumbers.randomElement(list));
+    }
+}
+
+
+class RandomNumbers {
+
+    private static Random random = new Random();
+
+    public static int randomElement(int[] array) {
+        if (null == array || array.length == 0) {
+            return 0;
+        }
+        int index = random.nextInt(array.length);
+        return array[index];
+    }
+
+    public static int randomElement(ArrayList<Integer> list) {
+        if (list.size() == 0) {
+            return 0;
+        }
+        int index = random.nextInt(list.size());
+        return list.get(index);
+    }
 }

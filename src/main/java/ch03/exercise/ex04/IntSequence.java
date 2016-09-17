@@ -8,9 +8,13 @@ import java.util.Arrays;
  *
  * @author samyeong-gu
  */
+@FunctionalInterface
 public interface IntSequence {
 
-    boolean hasNext();
+    default boolean hasNext() {
+        return true;
+    }
+
     int next();
 
     static IntSequence of(int... args) {
@@ -30,5 +34,9 @@ public interface IntSequence {
                 return value;
             }
         };
+    }
+
+    static IntSequence constant(int i) {
+        return () -> i;
     }
 }

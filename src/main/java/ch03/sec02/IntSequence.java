@@ -12,5 +12,4 @@ public interface IntSequence {
     }
 
     int next();
-
 }
